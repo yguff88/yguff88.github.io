@@ -293,7 +293,7 @@ button:hover{
   background-color:#4288D6;
   color:white;
   font-size:28px;
-  margin-left:400px;
+  margin-left:350px;
   margin-bottom:50px;
 }
 
@@ -307,6 +307,38 @@ button:hover{
   color:#4288D6;
   font-size:18px;
   padding-bottom:50px;
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+  h2 {
+    font-size:12px;
+  }
+  button {
+    font-size:12px;
+    padding: 7px 5px 7px 5px;
+  }
+  #answers h2 {
+    display:none;
+  }
+  .topsection{
+    height:900px;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  h2 {
+    font-size:12px;
+  }
+  button {
+    font-size:12px;
+    padding: 7px 5px 7px 5px;
+  }
+  #answers h2 {
+    display:none;
+  }
+  .topsection{
+    height:900px;
+  }
 }
 
 
