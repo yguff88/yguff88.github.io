@@ -1,0 +1,138 @@
+/*
+Project Name: Autolibs
+Author: Alec McGuffey
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/*Font Imports */
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:300);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:500);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:700);
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firefox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* header section */
+
+body{
+  margin-top:0px;
+  margin-left:0px;
+  margin-right:0px;
+  background-color:#B9D8FB;
+}
+
+#logo { 
+  width:12%;
+  margin-left:70px;
+  margin-top:0px;
+  padding:30px 0px 0px 0px;
+  float:left;
+}
+
+nav {
+  margin-right:75px;
+  margin-top:0px;
+  padding-top:40px;
+  float:right;
+}
+
+nav a {
+  font-size:20px;
+  font-family:"Fira Sans";
+  font-weight:700;
+  color:white;
+  float:right;
+  margin-top:0px;
+  text-decoration:none;
+  padding-right:25px;
+  padding-left:15px;
+}
+
+nav a:hover{
+  color:#4288D6;
+}
+
+.landing_body {
+  width:70%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  font-family:"Fira Sans";
+  font-weight:400;
+  color:white;
+  padding-top:125px;
+}
+
+.subcopy {
+  line-height:35px;
+  font-size:30px;
+  font-weight:400;
+}
+
+.reachout {
+  font-size:22px;
+  font-weight:300;
+  margin-bottom:0px;
+}
+
+/* main body section */
+
+
+input {
+  width:400px;
+  height:200px;
+  float:left;
+  background-color:white;
+  border-radius:7px;
+  border:0px solid #4288D6;
+  margin-top:15px;
+  padding: 0px 30px 145px 20px;
+  color:#4288D6;
+  font-size:16px;
+  margin-left:250px;
+}
+
+#email {
+  width:400px;
+  height:30px;
+  float:left;
+  background-color:white;
+  border-radius:7px;
+  border:0px solid #4288D6;
+  margin-top:15px;
+  padding: 0px 30px 0px 20px;
+  color:#4288D6;
+  font-size:16px;
+  margin-left:250px;
+}
+
+
+#submitbutton {
+  border-radius:3px;
+  border:2px solid #4288D6;
+  padding: 5px 20px 5px 20px;
+  background-color:#4288D6;
+  color:white;
+  float:left;
+  clear:both;
+  font-size:24px;
+  margin-left:532px;
+  margin-top:10px;
+}
+
+#bottom {
+  height:300px;
+}
+
+
+
