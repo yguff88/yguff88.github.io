@@ -82,6 +82,7 @@ $('#submit').on('click',function(){
 			$('.democrat').remove();
 			$('.myname').html(name);
 			$('.response').html(republicanChoices[Math.floor(Math.random()*republicanChoices.length)]);
+			$('.another').css('visibility','visible');
 		} else if (party === "Democrat") {
 			randomdemocratNoun = democratNouns[Math.floor(Math.random()*democratNouns.length)];
 			randomdemocratNoun2 = democratNouns[Math.floor(Math.random()*democratNouns.length)];
@@ -98,6 +99,25 @@ $('#submit').on('click',function(){
 			$('.democrat').remove();
 			$('.myname').html(name);
 			$('.response').html(democratChoices[Math.floor(Math.random()*democratChoices.length)]);
+			$('.another').css('visibility','visible');
 		}
 	});
 	});
+
+$('.another').on('click',function(){
+			randomrepublicanNoun = republicanNouns[Math.floor(Math.random()*republicanNouns.length)];
+			randomrepublicanNoun2 = republicanNouns[Math.floor(Math.random()*republicanNouns.length)];
+			randomrepublicanNoun3 = republicanNouns[Math.floor(Math.random()*republicanNouns.length)];
+			randomrepublicanAdjective = republicanAdjectives[Math.floor(Math.random()*republicanAdjectives.length)];
+			randomrepublicanAdjective2 = republicanAdjectives[Math.floor(Math.random()*republicanAdjectives.length)];
+			randomrepublicanAdjective3 = republicanAdjectives[Math.floor(Math.random()*republicanAdjectives.length)];
+			randomrepublicanVerb = republicanVerbs[Math.floor(Math.random()*republicanVerbs.length)];
+			randomrepublicanVerb2 = republicanVerbs[Math.floor(Math.random()*republicanVerbs.length)];
+			randomrepublicanVerb3 = republicanVerbs[Math.floor(Math.random()*republicanVerbs.length)];
+			var republicanChoices = [randomrepublicanVerb + ". " + randomrepublicanVerb2 + ". " + randomrepublicanVerb3 + ".", randomrepublicanAdjective + " " + randomrepublicanNoun + ". " + randomrepublicanAdjective2 + " " + randomrepublicanNoun2 + ".", "Reigniting the " + randomrepublicanNoun + " of America.", "A " + randomrepublicanAdjective + " " + randomrepublicanAdjective2 + " " + randomrepublicanNoun + ".", "From " + randomrepublicanNoun + " to " + randomrepublicanNoun2 + ".", "Believe in " + name + ".", name + " for Us.", "A " + randomrepublicanAdjective + " " + randomrepublicanNoun + " is Coming.", name + " for " + randomrepublicanNoun + ".", randomrepublicanVerb + " " + randomrepublicanNoun + " " + randomrepublicanAdjective + " Again.", randomrepublicanVerb + " America Now.", "The People's " + randomrepublicanNoun + ".", randomrepublicanNoun + " Matters.", randomrepublicanVerb + " Our " + randomrepublicanNoun + ".", "Obama is " + randomrepublicanAdjective + ".", randomrepublicanNoun + ". " + randomrepublicanNoun2 + ". " + randomrepublicanNoun3 + ".", "A " + randomrepublicanAdjective + " " + randomrepublicanNoun + " for America."];
+			$('.myname').html(name);
+			$('.response').html(republicanChoices[Math.floor(Math.random()*republicanChoices.length)]);
+	});
+	
+
+
